@@ -6,18 +6,52 @@
     <title>Tags Semânticas do HTML</title>
 </head>
 <body>
-    <div>
-        <h1>Tags Semânticas</h1>
+    <header> <!--Substitui a div dessa linha pela tag header-->
+        <h1>Tags Semânticas</h1> <!--Nunca usar mais do que 1 h1 e seguir a hierarquia, nunca pulando um h1 direto pra h6-->
 
-    <div>
+    <div> <!--Substitui a div dessa linha pela tag nav que é usada para agrupar os links de navegação de uma página-->
         <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </div>
-    </div>
+    </header>
     
+   <main> <!--Essa tag agrupa o conteudo principal da página-->
+    <section id="inicio"> <!--A adição de id permite criar uma âncora para ser usada nos links de navegação dentro da página-->
+        <h2>Início</h2>
+            <p>Bem-vindo à nossa página de exemplo!</p>
+    </section> <!-- A tag section serve para dividir um conteudo/seção da pagina, em vez da tag div que é uma separação generica-->
+    
+
+    <section id="sobre"><!--A adição de id permite criar uma âncora para ser usada nos links de navegação dentro da página-->
+        <h2>Sobre</h2>
+            <article><!--Substitui a div dessa linha pela tag article, para mostrar que é um conteúdo proprio/autocontido da pagina-->
+                <h3>História</h3>
+                <p>Aqui contamos a história da nossa empresa.</p>
+            </article>
+            <article><!--Substitui a div dessa linha pela tag article, pois temos outro conteúdo próprio da página-->
+                <h3>Missão</h3>
+                <p>Nossa missão é fornecer produtos de qualidade para nossos clientes.</p>
+            </article>
+            
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+            <address><!--A tag Adrress permite que o navegador identifique o conteudo de contato, dentro da pagina-->
+                <p>Entre em contato conosco:</p>
+                <p>Endereço: Rua das Flores, 123</p>
+                <p>Email: contato@exemplo.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </address>
+        </section>
+   </main>
+
+    <footer> <!--Essa tag footer fornece informações de pé de página, como ano e marca registrada-->
+        <p>&copy; 2023 OneBitCode - Tags Semânticas</p>
+    </footer>
 
 </body>
 </html>
